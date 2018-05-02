@@ -1,0 +1,28 @@
+name: "三年级23班"
+
+teacher {
+  name: "tom"
+  age: 17
+  work {
+    isworker: 1 ;#中文
+    isjiaban: 1;
+   }
+}
+
+stu {
+    age: 19;
+    name: "demo"; ##中文
+    grade: 134;
+}
+
+stu {
+    age: 19;
+    name: "google"; ##中文
+    grade: 134;
+}
+
+stu {
+    age: 19;
+    name: "snake"; ##中文
+    grade: 134;
+}

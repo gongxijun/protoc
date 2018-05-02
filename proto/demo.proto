@@ -1,0 +1,27 @@
+package caffe;
+
+message Student
+   {
+      required int32 age = 1; //ID　required 表示必要字段
+      required string name = 2; //str　必要字段
+      optional int32 grade = 3 ; //optional field　可选字段，可以有无，最多ｂ
+   }
+
+message WorkDay{
+    required bool isworker =1;
+    required bool isjiaban =2; //是否算加班
+}
+
+message Teacher{
+    required string name = 1 ;
+    required WorkDay work = 2;  //是否工作
+    optional int32  age = 3;
+
+}
+
+//班级
+message Class{
+       required string name = 1;   //班级名称
+       repeated Student stu = 2;    //班级成员 数组
+       repeated Teacher teacher=3;
+   }
